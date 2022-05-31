@@ -1,0 +1,15 @@
+/// <reference path="./events/change-event.d.ts"/>
+/// <reference path="./anchors-pane.d.ts"/>
+/// <reference path="./box-pane.d.ts"/>
+/// <reference path="./button-group.d.ts"/>
+/// <reference path="./card-pane.d.ts"/>
+/// <reference path="./desktop-pane.d.ts"/>
+/// <reference path="./flow-pane.d.ts"/>
+/// <reference path="./grid-pane.d.ts"/>
+/// <reference path="./holy-grail-pane.d.ts"/>
+/// <reference path="./horizontal-box-pane.d.ts"/>
+/// <reference path="./scroll-pane.d.ts"/>
+/// <reference path="./split-pane.d.ts"/>
+/// <reference path="./tabbed-pane.d.ts"/>
+/// <reference path="./tool-bar.d.ts"/>
+/// <reference path="./vertical-box-pane.d.ts"/>
