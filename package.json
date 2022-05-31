@@ -2,7 +2,7 @@
     "name": "@types/kenga",
     "description": "TypeScript definitions for Kenga modules",
     "version": "0.0.1",
-    "repository": "https://github.com/marat-gainullin/winnie-atom-plugin",
+    "repository": "https://github.com/marat-gainullin/kenga-types",
     "license": "MIT",
     "author": "marat-gainullin <mg@altsoft.biz>",
     "private": false,
