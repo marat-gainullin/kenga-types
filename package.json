@@ -1,10 +1,6 @@
 {
     "name": "@types/kenga",
-    "description": "TypeScript definitions for Kenga modules",
     "version": "0.0.1",
-    "repository": "https://github.com/marat-gainullin/kenga-types.git",
-    "license": "MIT",
-    "author": "marat-gainullin <mg@altsoft.biz>",
-    "private": false,
+    "description": "TypeScript definitions for kenga.js",
     "types": "index.d.ts"
 }

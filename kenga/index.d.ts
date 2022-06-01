@@ -525,10 +525,12 @@ declare module 'kenga/key-codes' {
 }
 
 declare module 'kenga/event' {
-  export default class Event {
-    event: string
-    source: any
-    targte: any
+  import Widget from 'kenga/widget'
+
+  export default class KengaEvent {
+    event: Event
+    source: Widget
+    target: Widget
   }
 }
 
@@ -549,8 +551,10 @@ declare module 'kenga/events/blur-event' {
 
 declare module 'kenga/events/container-event' {
   import Event from 'kenga/event'
+  import Widget from 'kenga/widget'
+
   export default class ContainerEvent extends Event {
-    child: any
+    child: Widget
   }
 }
 
@@ -561,6 +565,7 @@ declare module 'kenga/events/focus-event' {
 
 declare module 'kenga/events/item-event' {
   import Event from 'kenga/event'
+
   export default class ItemEvent extends Event {
     item: any
   }
@@ -568,6 +573,7 @@ declare module 'kenga/events/item-event' {
 
 declare module 'kenga/events/key-event' {
   import Event from 'kenga/event'
+
   export default class KeyEvent extends Event {
     altDown: boolean
     controlDown: boolean
@@ -596,6 +602,7 @@ declare module 'kenga/events/mouse-event' {
 
 declare module 'kenga/events/text-change-event' {
   import Event from 'kenga/event'
+
   export default class TextChangeEvent extends Event {
     value: string
   }
@@ -603,6 +610,7 @@ declare module 'kenga/events/text-change-event' {
 
 declare module 'kenga/events/value-change-event' {
   import Event from 'kenga/event'
+
   export default class ValueChangeEvent extends Event {
     oldValue: any
     newValue: any
@@ -651,15 +659,15 @@ declare module 'kenga/widget' {
     focus(): void
     blur(): void
 
-    addActionHandler(handler: (etv: ActionEvent) => void): { removeHandler: () => void }
-    onAction: (etv: ActionEvent) => void
+    addActionHandler(handler: (evt: ActionEvent) => void): { removeHandler: () => void }
+    onAction: (evt: ActionEvent) => void
     fireAction: () => void
 
-    addMouseExitHandler(handler: (etv: MouseEvent) => void): { removeHandler: () => void }
-    onMouseExit: (etv: MouseEvent) => void
+    addMouseExitHandler(handler: (evt: MouseEvent) => void): { removeHandler: () => void }
+    onMouseExit: (evt: MouseEvent) => void
 
-    addMouseClickHandler(handler: (etv: MouseEvent) => void): { removeHandler: () => void }
-    onMouseClick: (etv: MouseEvent) => void
+    addMouseClickHandler(handler: (evt: MouseEvent) => void): { removeHandler: () => void }
+    onMouseClick: (evt: MouseEvent) => void
 
     addMouseDoubleClickHandler(handler: (evt: MouseEvent) => void): { removeHandler: () => void }
     onMouseDoubleClick: (evt: MouseEvent) => void
