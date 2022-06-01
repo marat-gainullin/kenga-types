@@ -1,5 +1,5 @@
 {
-    "name": "@types/kenga",
+    "name": "kenga-types",
     "version": "0.0.1",
     "description": "TypeScript definitions for kenga.js",
     "types": "index.d.ts",
