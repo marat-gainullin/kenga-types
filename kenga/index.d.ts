@@ -617,6 +617,18 @@ declare module 'kenga/events/value-change-event' {
   }
 }
 
+declare module 'kenga/has-value' {
+  import ValueChangeEvent from 'kenga/events/value-change-event'
+
+  export default interface HasValue {
+    text: string
+    value: any
+    onValueChange: (evt: ValueChangeEvent) => void
+    addValueChangeHandler: (handler: (evt: ValueChangeEvent) => void) => { removeHandler: () => void }
+    fireValueChanged(): void
+  }
+}
+
 declare module 'kenga/widget' {
   import WidgetEvent from 'kenga/events/widget-event'
   import ActionEvent from 'kenga/events/action-event'

@@ -3,12 +3,15 @@
 declare module 'kenga-fields/drop-down-field' {
   import BoxField from 'kenga/box-field'
   import ItemEvent from 'kenga/events/item-event'
+  import HasValue from 'kenga/has-value'
 
-  export default class DropDownField extends BoxField {
+  export default class DropDownField extends BoxField implements HasValue {
     emptyText: string
-    text: string
+
     value: any
+    text: string
     textChanged(): void
+
     addSelectHandler(handler: (evt: ItemEvent) => void): { removeHandler: () => void }
 
     selectedIndex: number

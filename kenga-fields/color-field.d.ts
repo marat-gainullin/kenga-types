@@ -2,8 +2,9 @@
 
 declare module 'kenga-fields/color-field' {
   import BoxField from 'kenga/box-field'
+  import HasValue from 'kenga/has-value'
 
-  export default class ColorField extends BoxField {
+  export default class ColorField extends BoxField implements HasValue {
     text: string
     value: any
     textChanged(): void

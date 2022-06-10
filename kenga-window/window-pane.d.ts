@@ -36,9 +36,9 @@ declare module "kenga-window/window-pane" {
     activate(): void
     deactivate(): void
     show(): void
-    showModal(onSelect: (selected: any) => void): void
+    showModal(onSelect?: (selected: any) => void): void
     showInternalFrame(desktopPane: Widget): void
-    close(selected: any): void
+    close(selected?: any): void
     minimize(): void
     maximize(): void
     restore(): void
