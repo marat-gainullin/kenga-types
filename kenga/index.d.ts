@@ -750,6 +750,8 @@ declare module 'kenga/box-field' {
     readonly box: HTMLInputElement
     emptyText: string
     readonly valid: boolean
+    showError(errorText: string): void
+    hideError(): void
     formatError: () => string
     checkValidity: () => boolean
     validate: () => void
