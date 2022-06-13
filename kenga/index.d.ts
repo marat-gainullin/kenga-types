@@ -751,6 +751,9 @@ declare module 'kenga/box-field' {
     emptyText: string
     readonly valid: boolean
     formatError: () => string
+    checkValidity: () => boolean
+    validate: () => void
+    validateOnInput: boolean;
 
     fireTextChanged(): void
     addTextChangeHandler(handler: (evt: TextChangeEvent) => void): { removeHandler: () => void }
