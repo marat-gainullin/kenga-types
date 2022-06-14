@@ -50,7 +50,7 @@ declare module "kenga-grid/grid" {
     insertable: boolean
     focusedRow: number
     focusedColumn: number
-    hasSelected(): boolean
+    hasSelected: boolean
     insert(item: any): void
     deleteSelected(): void
     removed(items: any[]): void
