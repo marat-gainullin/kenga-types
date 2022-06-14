@@ -663,6 +663,10 @@ declare module 'kenga/widget' {
     contextMenu: Widget
     attached: boolean
     visible: boolean
+    left: number
+    top: number
+    width: number
+    height: number
     /**
      * It is used only when the widget is a child of a TabbedPane
      */
