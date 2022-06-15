@@ -4,7 +4,7 @@ declare module 'kenga-containers/tabbed-pane' {
   import Cards from 'kenga-containers/card-pane'
 
   export default class TabbedPane extends Cards {
-    captions: HTMLElement
-    captionsShell: HTMLElement
+    readonly captions: HTMLElement
+    readonly captionsShell: HTMLElement
   }
 }
