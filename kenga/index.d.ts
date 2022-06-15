@@ -653,6 +653,7 @@ declare module 'kenga/widget' {
     readonly element: HTMLElement
     readonly shell: HTMLElement
     readonly box: HTMLElement
+    classes: string
     enabled: boolean
     name: string
     title: string
