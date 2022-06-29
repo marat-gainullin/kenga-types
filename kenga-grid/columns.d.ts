@@ -26,6 +26,8 @@ declare module "kenga-grid/column" {
     sort(): void
     sortDesc(): void
     unsort(): void
+    getValue(aItem: any): any
+    setValue(aItem: any, value: any)
 
     padding: number
     width: number
