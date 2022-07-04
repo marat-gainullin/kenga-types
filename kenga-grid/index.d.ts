@@ -39,6 +39,7 @@ declare module "kenga-grid/grid" {
     frozenRows: number
     draggableRows: boolean
     onRender: (dataRow: any, viewCell: HTMLTableCellElement, viewRowIndex?: number, text?: string) => void
+    onRowRender: (dataRow: any, viewRow: HTMLTableRowElement, viewRowIndex?: number) => void
     data: any[]
     field: string
     parentField: string
