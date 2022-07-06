@@ -65,6 +65,7 @@ declare module "kenga-grid/grid" {
     unselectAll(needRedraw?: boolean): void
     depthOf(item: any): number
     expanded(item: any): boolean
+    expandedChanged(): void
     expand(item: any | any[]): void
     collapse(item: any | any[]): void
     toggle(item: any | any[]): void
