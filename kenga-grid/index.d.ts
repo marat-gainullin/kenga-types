@@ -12,6 +12,7 @@ declare module "kenga-grid/grid" {
   import FocusEvent from 'kenga/events/focus-event'
   import BlurEvent from 'kenga/events/blur-event'
   import ItemEvent from 'kenga/events/item-event'
+  import WidgetEvent from 'kenga/events/widget-event'
   import SortEvent from 'kenga-grid/events/sort-event'
   import Column from 'kenga-grid/column'
   import ColumnNode from 'kenga-grid/columns/column-node'
@@ -38,6 +39,7 @@ declare module "kenga-grid/grid" {
     frozenColumns: number
     frozenRows: number
     draggableRows: boolean
+    onHeaderChanged: (evt: WidgetEvent) => void
     onRender: (dataRow: any, viewCell: HTMLTableCellElement, viewRowIndex?: number, text?: string) => void
     onRowRender: (dataRow: any, viewRow: HTMLTableRowElement, viewRowIndex?: number) => void
     data: any[]

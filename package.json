@@ -1,6 +1,6 @@
 {
     "name": "kenga-types",
-    "version": "0.0.12",
+    "version": "0.0.13",
     "description": "TypeScript definitions for kenga.js",
     "types": "index.d.ts",
     "repository": "https://github.com/marat-gainullin/kenga-types.git",

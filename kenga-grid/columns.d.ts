@@ -1,9 +1,9 @@
 /// <reference path="../kenga/index.d.ts"/>
 
 declare module "kenga-grid/column" {
+  import Widget from 'kenga/widget'
   import NodeView from 'kenga-grid/header/node-view'
   import ColumnNode from 'kenga-grid/columns/column-node'
-  import Widget from 'kenga/widget'
 
   export default class Column {
     /**
@@ -41,6 +41,9 @@ declare module "kenga-grid/column" {
     renderer: Widget
     editor: Widget
 
+    onShow: (source: Column) => void
+    onHide: (source: Column) => void
+    onResize: (source: Column, oldWidth: number, newWidth: number) => void
     onRender: (dataRow: any, viewCell: HTMLTableCellElement, viewRowIndex?: number, text?: string) => void
     onHeaderRender: (view: NodeView, viewCell: HTMLTableCellElement) => void
   }
@@ -98,6 +101,9 @@ declare module "kenga-grid/columns/column-node" {
     sortDesc(): void
     unsort(): void
 
+    onShow: (source: Column) => void
+    onHide: (source: Column) => void
+    onResize: (source: Column, oldWidth: number, newWidth: number) => void
     onRender: (dataRow: any, viewCell: HTMLTableCellElement, viewRowIndex?: number, text?: string) => void
     onHeaderRender: (view: NodeView, viewCell: HTMLTableCellElement) => void
   }
