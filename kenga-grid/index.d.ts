@@ -35,6 +35,7 @@ declare module "kenga-grid/grid" {
     renderingPadding: number
     headerRowsHeight: number
     headerVisible: boolean
+    header: ColumnNode[]
     columnsChevron: HTMLElement
     frozenColumns: number
     frozenRows: number
