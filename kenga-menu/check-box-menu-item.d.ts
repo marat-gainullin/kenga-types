@@ -5,7 +5,7 @@ declare module "kenga-menu/check-box-menu-item" {
   import ActionEvent from 'kenga/events/action-event'
   import BooleanMenuItem from 'kenga-menu/boolean-menu-item'
 
-  class CheckMenuItem extends BooleanMenuItem {
+  export default class CheckMenuItem extends BooleanMenuItem {
     constructor(text: string, selected: boolean, onAction: (evt: ActionEvent) => void)
   }
 }
